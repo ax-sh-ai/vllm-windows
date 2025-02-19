@@ -1,3 +1,6 @@
+# HVVENT GOT IT TO WORK YET
+# CANT ACCESS SERVER ⚠️
+
 # Welcome to vLLM Windows Home!
 This repository contains a Docker Compose setup for running vLLM on Windows. With this setup, you can easily run and experiment with vLLM on Windows Home.
 

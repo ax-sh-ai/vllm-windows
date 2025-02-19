@@ -1,6 +1,9 @@
-version: "3"
+
 services:
     vllm-openai:
+        env_file:
+        - path: ./.env
+          required: true # default
         deploy:
             resources:
                 reservations:
@@ -18,4 +21,4 @@ services:
             - 8000:8000
         ipc: host
         image: vllm/vllm-openai:latest
-        command: --model /models/mistral-7b
+        command: --model ${MODEL}

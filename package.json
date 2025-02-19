@@ -1,15 +1,17 @@
 {
-	"name": "vllm-windows",
-	"module": "index.ts",
-	"type": "module",
-	"devDependencies": {
-		"@types/bun": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	},
-	"scripts": {
-		"up": "docker-compose up",
-		"down": "docker-compose down"
-	}
+  "name": "vllm-windows",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "up": "docker-compose up -d",
+    "down": "docker-compose down",
+    "clean": "docker compose rm -fv"
+  },
+  "packageManager": "bun@1.2.2"
 }

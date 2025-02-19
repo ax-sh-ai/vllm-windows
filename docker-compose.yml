@@ -13,7 +13,7 @@ services:
             - ~/.cache/huggingface:/root/.cache/huggingface
             - ./models:/models
         environment:
-            - HUGGING_FACE_HUB_TOKEN=<hugging_face_token>
+            - HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}
         ports:
             - 8000:8000
         ipc: host
